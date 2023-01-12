@@ -1,0 +1,80 @@
+/* importing raleway and open sans fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Raleway:wght@700&display=swap');
+
+/* variables for different colors being used in layout */
+:root{
+    --main-bg-color: white;
+    --secondary-active-color: #FF6C00;
+    --color-black:#303030;
+    --color-gray-transparent: #9DA4BD99;
+    --paragraph-color1: #9DA4BD;
+    --paragraph-color2: #555555;
+}
+
+/* main body code setting main font*/
+body{
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: .02em;
+}
+
+.paragraph-color1{
+    color: var(--paragraph-color1)
+}
+
+.paragraph-color2{
+    color: var(--paragraph-color2)
+}
+
+.transparent-gray{
+    color: var(--color-gray-transparent);
+}
+
+.black{
+    color: var(--color-black);
+}
+
+.white{
+    color: var(--main-bg-color);
+}
+
+/* styling for nav links */
+.header-navbar-navlnk{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.header-navbar-navlnk:hover,
+.header-navbar-navlnk:focus{
+    color: var(--secondary-active-color);
+}
+
+.active{
+    color: var(--secondary-active-color);
+}
+
+/* styling for smaller span sub headings */
+.subheading{
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+}
+
+/* style for h2 */
+.section-heading{
+    font-family: "Raleway";
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: var(--color-black);
+}
+
+/* style for h1 */
+.main-heading{
+    font-size: 72px;
+    line-height: 1.18;
+    color: #FFFFFF;
+}

@@ -4,131 +4,142 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
         <title>BarberShop</title>
+
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
 
-    <body class="mainBody">
-        <header class="siteHeader">
-            <a class="logo" href="#"> 
+    <body>
+        <header class="header">
+            <a class="header-logo" href="#"> 
                 <img src="./img/Logo.jpg" alt="Company Logo"> 
             </a>
 
-            <nav class="navBar">
-                <ul class="navLinks">
+            <nav class="header-navbar">
+                <ul>
                     <li>
-                        <a class="navLink" href="about">About</a>
+                        <a class="header-navbar-navlnk active" href="">About</a>
                     </li>
                     <li>
-                        <a class="navLink" href="servicesPrices">Services and Prices</a>
+                        <a class="header-navbar-navlnk" href="">Services and Prices</a>
                     </li>
                     <li>
-                        <a class="navLink" href="barbers">Barbers</a>
+                        <a class="header-navbar-navlnk" href="">Barbers</a>
                     </li>
                     <li>
-                        <a class="navLink" href="contacts">Contacts</a>
+                        <a class="header-navbar-navlnk" href="">Contacts</a>
                     </li>
                 </ul>
+        
             </nav>
-            
-            <a class="phone" href="tel: +38 044 111 11 11">+38 044 111 11 11</a>
-            <button class="bookServiceBttn"type="button">Book a Service</button>
+
+            <a class="header-navbar-navlnk" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button type="button">Book a Service</button>
         </header>
 
         <main>
 
-            <section class="top-section">
-                <span class="startSpan">--A HAIR SALON FOR MEN IN KYIV</span>
-                <h1 class="heading1">BarberShop</h1>
-                <p class="paragraph">We are experts in trendy men's haircuts.</p>
-                <p class="paragraph">We work quickly, carefully, and tastefully.</p>
+            <section>
+                <span class="subheading transparent-gray">A HAIR SALON FOR MEN IN KYIV</span>
+                <h1 class="section-heading main-heading">BarberShop</h1>
+                <p class="paragraph-color1">We are experts in trendy men's haircuts.</p>
+                <p class="paragraph-color1">We work quickly, carefully, and tastefully.</p>
                 
-                <a class="ytLink">Youtube</a>
-                <a class="igLink">Instagram</a>
+                <a>Youtube</a>
+                <a>Instagram</a>
 
-                <img src="./img/Slider img 1.jpg">
-                <img src="./img/Slider img 2.jpg">
-                <img src="./img/Slider img 3.jpg">
+                <img src="./img/Slider img 1.jpg" alt="Barber applying shving cream" width="400">
+                <img src="./img/Slider img 2.jpg" alt="Razer in hand" width="400">
+                <img src="./img/Slider img 3.jpg" alt="Barber cutting hair with scissors" width="400">
 
-                <button class="backBttn" type="button">Back</button>
-                <button class="nextBttbn" type="button">Next</button>
+                <button type="button">Back</button>
+                <button type="button">Next</button>
             </section>
 
-            <section class="bestBarberShop">
-                <img class="bstBrbrImg1" src="./img/sect2img2.jpg">
-                <img class="bstBrbrImg2" src="./img/sect2img1.jpg">
-                <span class="startSpan">ABOUT</span>
-                <h2 class="heading2">The Best Barbershop in Your City</h2>
-                <p class="paragraph">
+            <section>
+                <img src="./img/sect2img2.jpg" alt="Razer shaping back of the neck">
+                <img src="./img/sect2img1.jpg" alt="Applying shaving cream">
+                <span class="subheading black">ABOUT</span>
+                <h2 class="section-heading">The Best Barbershop in Your City</h2>
+                <p class="paragraph-color2">
                     If you want to add more confidence to your image, you are definitely in the right place.
                 </p>
-                <p class="paragraph">
+                <p class="paragraph-color2">
                     We are a team that never rests on its laurels and yearns for change. 
                     And once you fall into the hands of our master, you will never be the same again. 
                     We are a team that is always on the same wavelength with clients. 
                     Therefore, we are always ready to improve everyone who comes to us!
                 </p>
-                <button class="bookServiceBttn2" type="button">Book A Service</button>
+                <button type="button">Book A Service</button>
             </section>
 
-            <section class="servicesAndPrices">
-                <span class="startSpan">SPEND TIME IN THE COMPANY OF THE BEST CRAFTSMAN</span>
-                <h2 class="heading2">Services and Prices</h2>
-                <ul class="servicePriceList">
-                    <li><p class="paragraph2">Mens Haircut</p> <p class="paragraphPrice">from 300 UAH</p></li>
-                    <li><p class="paragraph2">Beartd Trtim</p> <p class="paragraphPrice">from 200 UAH</p></li>
-                    <li><p class="paragraph2">Mustache Trim</p> <p class="paragraphPrice">from 200 UAH</p></li>
-                    <li><p class="paragraph2">Straight Razor Shave</p class="paragraphPrice"> <p>from 200 UAH</p></li>
-                    <li><p class="paragraph2">Trainee Haircut</p> <p class="paragraphPrice">from 50 UAH</p></li>
-                    <li><p class="paragraph2">Buzz Cut</p> <p class="paragraphPrice">from 200 UAH</p></li>
-                    <li><p class="paragraph2">Kids Haircut&#40;&#60;12 y.o&#41;</p> <p class="paragraphPrice">from 300 UAH</p></li>
-                    <li><p class="paragraph2">Gray Coverage</p> <p class="paragraphPrice">from 200 UAH</p></li>
+            <section>
+                <span class="subheading transparent-gray">SPEND TIME IN THE COMPANY OF THE BEST CRAFTSMAN</span>
+                <h2 style="color:white" class="section-heading">Services and Prices</h2>
+                <ul>
+                    <li><p>Mens Haircut</p> <p>from 300 UAH</p></li>
+                    <li><p>Beartd Trtim</p> <p>from 200 UAH</p></li>
+                    <li><p>Mustache Trim</p> <p>from 200 UAH</p></li>
+                    <li><p>Straight Razor Shave</p> <p>from 200 UAH</p></li>
+                    <li><p>Trainee Haircut</p> <p>from 50 UAH</p></li>
+                    <li><p>Buzz Cut</p> <p>from 200 UAH</p></li>
+                    <li><p>Kids Haircut&#40;&#60;12 y.o&#41;</p> <p>from 300 UAH</p></li>
+                    <li><p>Gray Coverage</p> <p>from 200 UAH</p></li>
                 </ul>
-                <button class="bookServiceBttn" type="button">Book A Service</button>
+                <button type="button">Book A Service</button>
             </section>
 
-            <section className="factSection">
-                <ul class="factList">
-                    <li><h3 class="heading3">600</h3><p class="paragraph">Satisfied Customers</p></li>
-                    <li><h3 class="heading3">20</h3><p class="paragraph">The Best Barbers of Kyiv</p></li>
-                    <li><h3 class="heading3">50</h3><p class="paragraph">Excellent Service Awards</p></li>
-                    <li><h3 class="heading3">100</h3><p class="paragraph">Gifts for Regualr Customers</p></li>
+            <section>
+                <ul>
+                    <li><h3>600</h3><p>Satisfied Customers</p></li>
+                    <li><h3>20</h3><p>The Best Barbers of Kyiv</p></li>
+                    <li><h3>50</h3><p>Excellent Service Awards</p></li>
+                    <li><h3>100</h3><p>Gifts for Regualr Customers</p></li>
                 </ul>
-                <span class="startSpan">OLD SCHOOL</span>
-                <h2 class="heading2">Why do they come to us?</h2>
-                <p class="paragraph">Only good things are said about us. 
+                <span class="subheading black">OLD SCHOOL</span>
+                <h2 class="section-heading">Why do they come to us?</h2>
+                <p class="paragraph-color2">Only good things are said about us. 
                     But it is better to see and feel 1 time than to read 10 times.
                 </p>
             </section>
 
-            <section class="connoisseurSection">
-                <span class="startSpan">FOR TRUE CONNOISSEURS OF THE ATMOSPHERE</span>
-                <h2 class="heading2">Our Barbers</h2>
-                <ul class="barberList">
-                    <li><img class="barberImg" src="./img/OurBarber1.jpg"><p>John Smith</p><p>Extreme Barber</p></li>
-                    <li><img class="barberImg" src="./img/OurBarber2.jpg"><p>Michele Doe</p><p>Extreme Barber</p></li>
-                    <li><img class="barberImg" src="./img/OurBarber3.jpg"><p>Alan Black</p><p>Extreme Barber</p></li>
+            <section>
+                <span class="subheading black">FOR TRUE CONNOISSEURS OF THE ATMOSPHERE</span>
+                <h2 class="section-heading">Our Barbers</h2>
+                <ul>
+                    <li><img src="./img/OurBarber1.jpg" alt="John Smith image"><p>John Smith</p><p>Extreme Barber</p></li>
+                    <li><img src="./img/OurBarber2.jpg" alt="Michele Doe image"><p>Michele Doe</p><p>Extreme Barber</p></li>
+                    <li><img src="./img/OurBarber3.jpg" alt="Alan Black Image"><p>Alan Black</p><p>Extreme Barber</p></li>
                 </ul>
             </section>
 
-            <section class="beardSection">
-                <span class="startSpan">IN LATIN, "BARBA" MEANS "BEARD"</span>
-                <ul class="brbrImgList">
-                    <li><img src="./img/Latin1.jpg"></li>
-                    <li><img src="./img/Latin2.jpg"></li>
-                    <li><img src="./img/Latin3.jpg"></li>
-                    <li><img src="./img/Latin4.jpg"></li>
+            <section>
+                <span class="subheading black">IN LATIN, "BARBA" MEANS "BEARD"</span>
+                <ul>
+                    <li><img src="./img/Latin1.jpg" alt="Cutting hair with trimmers"></li>
+                    <li><img src="./img/Latin2.jpg" alt="Applying shaving cream"></li>
+                    <li><img src="./img/Latin3.jpg" alt="Hot towel on face"></li>
+                    <li><img src="./img/Latin4.jpg" alt="Edging back head with razor"></li>
                 </ul>
             </section>
 
-            <section class="bookingContactForm">
-                <address class="contact">
-                    <a href="https://www.google.com/maps/search/Main+Street,+7A+Kyiv,+08132/@50.401699,30.252512,10z/data=!3m1!4b1">
-                        Main street, 7A<br/>
-                        Kyiv, 08132<br/>
-                    </a>
-                    <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-                    <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <section>
+                <h2 style="color:white" class="section-heading">Contacts</h2>
+                <address>
+                    <ul>
+                        <li>
+                            <a class="header-navbar-navlnk" href="https://www.google.com/maps/search/Main+Street,+7A+Kyiv,+08132/@50.401699,30.252512,10z/data=!3m1!4b1">
+                                Main street, 7A<br/>
+                                Kyiv, 08132<br/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-navbar-navlnk" href="tel:+380441111111">+38 044 111 11 11</a>
+                        </li>
+                        <li>
+                            <a class="header-navbar-navlnk" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                        </li>
+                    </ul>
                     <span>Working hours</span>
                     <p>Daily from 9:00 AM till 22:00 PM</p>
                 </address>
@@ -136,10 +147,10 @@
 
         </main>
 
-        <footer class="footer">
-            <span class="copyright">&#169; Copyright 2022</span>
-            <a class="ig" href="https://Instagram.com">Instagram</a>
-            <a class="yt" href="https://Youtube.com">Youtube</a>
+        <footer>
+            <span>&#169; Copyright 2022</span>
+            <a href="https://Instagram.com">Instagram</a>
+            <a href="https://Youtube.com">Youtube</a>
         </footer>
     </body>
 </html>
