@@ -78,3 +78,9 @@ body{
     line-height: 1.18;
     color: #FFFFFF;
 }
+
+button:hover,
+button:focus{
+    background-color: var(--secondary-active-color);
+    color: white;
+}
