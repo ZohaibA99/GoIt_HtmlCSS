@@ -19,6 +19,41 @@ body{
     letter-spacing: .02em;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address{
+    font-style: normal;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .paragraph-color1{
     color: var(--paragraph-color1)
 }
@@ -117,16 +152,48 @@ body{
 }
 
 .section-address{
-    font-style: normal;
     color: var(--paragraph-color1);
 }
 
 .section-address a{
-    font-style: normal;
     color: var(--paragraph-color1);
     text-decoration: none;
 }
 
 .section-address .underline{
     text-decoration: underline;
+}
+
+/* position and layout */
+
+.text-margin{
+    margin-top: 20px;
+}
+
+.bttn-margin40{
+    margin-top: 40px;
+}
+
+.section{
+    padding-top: 130px;
+}
+
+.book-service-bttn{
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #FF6C00;
+    cursor: pointer;
+}
+
+.book-service-bttn:hover{
+    cursor: pointer;
+    background-color: var(--secondary-active-color);
+    color: white;
+}
+
+.container{
+    width: 1280px;
+    padding-left: 55px;
 }

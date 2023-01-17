@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>BarberShop</title>
-
+        <!-- Normalizer Styling -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+        <!-- My Styling -->
         <link rel="stylesheet" href="./css/styles.css">
     </head>
 
@@ -16,37 +20,34 @@
             </a>
 
             <nav class="header-navbar">
-                <ul>
+                <ul class="list">
                     <li>
-                        <a class="header-navbar-navlnk active" href="#about">About</a>
+                        <a class="link header-navbar-navlnk active" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="header-navbar-navlnk" href="#services-and-prices">Services and Prices</a>
+                        <a class="link header-navbar-navlnk" href="#services-and-prices">Services and Prices</a>
                     </li>
                     <li>
-                        <a class="header-navbar-navlnk" href="#barbers">Barbers</a>
+                        <a class="link header-navbar-navlnk" href="#barbers">Barbers</a>
                     </li>
                     <li>
-                        <a class="header-navbar-navlnk" href="#contacts">Contacts</a>
+                        <a class="link header-navbar-navlnk" href="#contacts">Contacts</a>
                     </li>
                 </ul>
         
             </nav>
 
-            <a class="header-navbar-navlnk" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button type="button">Book a Service</button>
+            <a class="link header-navbar-navlnk" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="book-service-bttn" type="button">Book a Service</button>
         </header>
 
         <main>
 
             <section>
                 <span class="subheading transparent-gray">A HAIR SALON FOR MEN IN KYIV</span>
-                <h1 class="section-heading main-heading">BarberShop</h1>
-                <p class="paragraph-color1">We are experts in trendy men's haircuts.</p>
-                <p class="paragraph-color1">We work quickly, carefully, and tastefully.</p>
-                
-                <a>Youtube</a>
-                <a>Instagram</a>
+                <h1 class="section-heading main-heading text-margin">BarberShop</h1>
+                <p class="paragraph-color1 text-margin">We are experts in trendy men's haircuts.</p>
+                <p class="paragraph-color1 ">We work quickly, carefully, and tastefully.</p>
 
                 <img src="./img/Slider img 1.jpg" alt="Barber applying shving cream" width="400">
                 <img src="./img/Slider img 2.jpg" alt="Razer in hand" width="400">
@@ -56,28 +57,30 @@
                 <button type="button">Next</button>
             </section>
 
-            <section id="about">
+            <section class="section" id="about">
+                <div class="container">
                 <img src="./img/sect2img2.jpg" alt="Razer shaping back of the neck">
                 <img src="./img/sect2img1.jpg" alt="Applying shaving cream">
                 <span class="subheading black">ABOUT</span>
-                <h2 class="section-heading">The Best Barbershop in Your City</h2>
-                <p class="paragraph-color2">
+                <h2 class="section-heading text-margin">The Best Barbershop in Your City</h2>
+                <p class="paragraph-color2 text-margin">
                     If you want to add more confidence to your image, you are definitely in the right place.
                 </p>
-                <p class="paragraph-color2 font-subFont">
+                <p class="paragraph-color2 font-subFont text-margin">
                     We are a team that never rests on its laurels and yearns for change. 
                     And once you fall into the hands of our master, you will never be the same again. 
                     We are a team that is always on the same wavelength with clients. 
                     Therefore, we are always ready to improve everyone who comes to us!
                 </p>
-                <button type="button">Book A Service</button>
+                <button class="bttn-margin40" type="button">Book A Service</button>
+                </div>
             </section>
 
-            <section id="services-and-prices">
+            <section class="section">
                 <span class="subheading transparent-gray">SPEND TIME IN THE COMPANY OF THE BEST CRAFTSMAN</span>
-                <h2 style="color:white" class="section-heading">Services and Prices</h2>
-                <ul class="paragraph-color1">
-                    <li><p>Mens Haircut</p> <p>from 300 UAH</p></li>
+                <h2 style="color:white" class="section-heading text-margin">Services and Prices</h2>
+                <ul class="list paragraph-color1">
+                    <li><span>Mens Haircut</span><span>from 300 UAH</span></li>
                     <li><p>Beartd Trtim</p> <p>from 200 UAH</p></li>
                     <li><p>Mustache Trim</p> <p>from 200 UAH</p></li>
                     <li><p>Straight Razor Shave</p> <p>from 200 UAH</p></li>
@@ -89,33 +92,33 @@
                 <button type="button">Book A Service</button>
             </section>
 
-            <section>
-                <ul class="ratings-list">
+            <section class="section">
+                <ul class="list ratings-list">
                     <li><h3 class="ratings-list-heading">600<sup class="super-script">+</sup></h3><p>Satisfied Customers</p></li>
                     <li><h3 class="ratings-list-heading">20<sup class="super-script">+</sup></h3><p>The Best Barbers of Kyiv</p></li>
                     <li><h3 class="ratings-list-heading">50<sup class="super-script">+</sup></h3><p>Excellent Service Awards</p></li>
                     <li><h3 class="ratings-list-heading">100<sup class="super-script">+</sup></h3><p>Gifts for Regualr Customers</p></li>
                 </ul>
                 <span class="subheading black">OLD SCHOOL</span>
-                <h2 class="section-heading">Why do they come to us?</h2>
-                <p class="paragraph-color2">Only good things are said about us. 
+                <h2 class="section-heading text-margin">Why do they come to us?</h2>
+                <p class="paragraph-color2 text-margin">Only good things are said about us. 
                     But it is better to see and feel 1 time than to read 10 times.
                 </p>
             </section>
 
-            <section id="barbers">
+            <section class="section" id="barbers">
                 <span class="subheading black">FOR TRUE CONNOISSEURS OF THE ATMOSPHERE</span>
-                <h2 class="section-heading">Our Barbers</h2>
-                <ul>
+                <h2 class="section-heading text-margin">Our Barbers</h2>
+                <ul class="list">
                     <li><img src="./img/OurBarber1.jpg" alt="John Smith image"><p class="barber-name">John Smith</p><p class="extreme-barber">Extreme Barber</p></li>
                     <li><img src="./img/OurBarber2.jpg" alt="Michele Doe image"><p class="barber-name">Michele Doe</p><p class="extreme-barber">Extreme Barber</p></li>
                     <li><img src="./img/OurBarber3.jpg" alt="Alan Black Image"><p class="barber-name">Alan Black</p><p class="extreme-barber">Extreme Barber</p></li>
                 </ul>
             </section>
 
-            <section>
+            <section class="section">
                 <span class="subheading black">IN LATIN, "BARBA" MEANS "BEARD"</span>
-                <ul>
+                <ul class="list">
                     <li><img src="./img/Latin1.jpg" alt="Cutting hair with trimmers"></li>
                     <li><img src="./img/Latin2.jpg" alt="Applying shaving cream"></li>
                     <li><img src="./img/Latin3.jpg" alt="Hot towel on face"></li>
@@ -123,10 +126,10 @@
                 </ul>
             </section>
 
-            <section id="contacts">
+            <section class="section" id="contacts">
                 <h2 style="color:white" class="section-heading">Contacts</h2>
                 <address class="section-address">
-                    <ul>
+                    <ul class="list">
                         <li>
                             <a class="header-navbar-navlnk" href="https://www.google.com/maps/search/Main+Street,+7A+Kyiv,+08132/@50.401699,30.252512,10z/data=!3m1!4b1">
                                 Main street, 7A<br/>
