@@ -1,159 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>BarberShop</title>
-        <!-- Normalizer Styling -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-        <!-- My Styling -->
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BarberShop</title>
+    <!-- Normalizer Styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- My Styling -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-    <body>
-        <header class="header">
-            <a class="header-logo" href="#"> 
-                <img src="./img/Logo.jpg" alt="Company Logo"> 
-            </a>
+  <body>
+    <header class="header-bg">
+      <div class="disp-flex-flex">
+        <section class="header-section-left margin-top">
+          <img class="logo-img" src="./img/Logo.jpg" alt="company logo" />
+          <div class="side-lnk">
+            <ul class="list disp-flex-flex">
+              <li class="marg">
+                <a class="link header-navbar-navlnk" href="">Instagram</a>
+              </li>
+              <li>
+                <a class="link header-navbar-navlnk" href="">Youtube</a>
+              </li>
+            </ul>
+            </div>
+        </section>
 
-            <nav class="header-navbar">
-                <ul class="list">
-                    <li>
-                        <a class="link header-navbar-navlnk active" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="link header-navbar-navlnk" href="#services-and-prices">Services and Prices</a>
-                    </li>
-                    <li>
-                        <a class="link header-navbar-navlnk" href="#barbers">Barbers</a>
-                    </li>
-                    <li>
-                        <a class="link header-navbar-navlnk" href="#contacts">Contacts</a>
-                    </li>
+        <div class="header-section-right">
+          <section class="disp-flex-flex text-color-white">
+            <div class="disp-flex-flex margin-top fixed">
+              <nav>
+                <ul class="list nav-flex-direction">
+                  <li class="display-flex-li space">
+                    <a class="link header-navbar-navlnk active" href="#about"
+                      >About</a
+                    >
+                  </li>
+                  <li class="display-flex-li space">
+                    <a
+                      class="link header-navbar-navlnk"
+                      href="#services-and-prices"
+                      >Services and Prices</a
+                    >
+                  </li>
+                  <li class="display-flex-li space">
+                    <a class="link header-navbar-navlnk" href="#barbers"
+                      >Barbers</a
+                    >
+                  </li>
+                  <li class="display-flex-li space">
+                    <a class="link header-navbar-navlnk" href="#contacts"
+                      >Contacts</a
+                    >
+                  </li>
                 </ul>
+              </nav>
+
+              <div class="just-content">
+                <a
+                  class="link header-navbar-navlnk phn-lnk"
+                  href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
+                <button
+                  class="bttn header-navbar-navlnk btn-bg text-color-white"
+                  type="button"
+                  data-modal-open
+                >
+                  Book a Service
+                </button>
+            </div>
+          </section>
+          <div class="margin-top-subheading">
+            <span class="subheading transparent-gray"
+              >A HAIR SALON FOR MEN</span
+            >
+            <h1 class="section-heading main-heading text-margin">
+              BarberShop
+            </h1>
+            <p class="paragraph-color1 text-margin">
+              We are experts in trendy mens haircuts.
+            </p>
+            <p class="paragraph-color1">
+              We work quickly, carefully, and tastefully.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="container disp-flex-flex">
+          <ul class="list disp-flex">
+            <li class="disp-flex-li">
+              <img
+                src="./img/sect2img2.jpg"
+                alt="Razer shaping back of the neck"
+              />
+            </li>
+            <li class="disp-flex-li">
+              <img src="./img/sect2img1.jpg" alt="Applying shaving cream" />
+            </li>
+          </ul>
+          <div class="disp-flex2">
+            <span class="subheading-before"><span class="subheading black">ABOUT</span></span>
+            <h2 class="section-heading text-margin width500">
+              The Best Barbershop in Your City
+            </h2>
+            <p class="paragraph-color2 text-margin width500 box-shadow">
+              If you want to add more confidence to your image, you are
+              definitely in the right place.
+            </p>
+            <p class="paragraph-color2 font-subFont text-margin width536">
+              We are a team that never rests on its laurels and yearns for
+              change. And once you fall into the hands of our master, you will
+              never be the same again. We are a team that is always on the same
+              wavelength with clients. Therefore, we are always ready to improve
+              everyone who comes to us!
+            </p>
+            <button
+              class="bttn bttn-margin40 header-navbar-navlnk"
+              type="button"
+            >
+              Book A Service
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prices-bg">
+        <div class="container">
+          <span class="subheading transparent-gray"
+            >SPEND TIME IN THE COMPANY OF THE BEST CRAFTSMAN</span
+          >
+          <h2 style="color: white" class="section-heading text-margin">
+            Services and Prices
+          </h2>
+          <ul class="list paragraph-color1 disp-flex-flex price-list margin46">
+            <li>
+              <ul class="list price-width list-bg-left">
+                <li>
+                  <span class="left">Mens Haircut</span>
+                  <hr class="inline-line width1" />
+                  <span class="right">from 300 UAH</span>
+                </li>
+                <li>
+                  <span class="left">Beard Trim</span>
+                  <hr class="inline-line width2" />
+                  <span class="right">from 200 UAH</span>
+                </li>
+                <li>
+                  <span class="left">Mustache Trim</span>
+                  <hr class="inline-line width3" />
+                  <span class="right">from 200 UAH</span>
+                </li>
+                <li>
+                  <span class="left">Straight Razor Shave</span>
+                  <hr class="inline-line width4" />
+                  <span class="right">from 200 UAH</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="list price-width list-bg-right">
+                <li>
+                  <span class="left">Trainee Haircut</span>
+                  <hr class="inline-line width5" />
+                  <span class="right">from 50 UAH</span>
+                </li>
+                <li>
+                  <span class="left">Buzz Cut</span>
+                  <hr class="inline-line width6" />
+                  <span class="right">from 200 UAH</span>
+                </li>
+                <li>
+                  <span class="left">Kids Haircut&#40;&#60;12 y.o&#41;</span>
+                  <hr class="inline-line width7" />
+                  <span class="right">from 300 UAH</span>
+                </li>
+                <li>
+                  <span class="left">Gray Coverage</span>
+                  <hr class="inline-line width8" />
+                  <span class="right">from 200 UAh</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button
+            class="bttn header-navbar-navlnk price-bttn text-color-white"
+            type="button"
+          >
+            Book A Service
+          </button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container2 disp-flex-flex">
+          <div class="disp-flex-flex">
+            <ul class="list ratings-list">
+              <li class="ratings-lst-item">
+                <h3 class="ratings-list-heading">
+                  600<sup class="super-script">+</sup>
+                </h3>
+                <p class="ratings-p">Satisfied Customers</p>
+              </li>
+              <li class="ratings-lst-item margin-top">
+                <h3 class="ratings-list-heading">
+                  20<sup class="super-script">+</sup>
+                </h3>
+                <p class="ratings-p">The Best Barbers of Kyiv</p>
+              </li>
+            </ul>
+
+            <ul class="list ratings-list ratings-list-right">
+              <li class="ratings-lst-item">
+                <h3 class="ratings-list-heading">
+                  50<sup class="super-script">+</sup>
+                </h3>
+                <p class="ratings-p">Excellent Service Awards</p>
+              </li>
+              <li class="ratings-lst-item margin-top">
+                <h3 class="ratings-list-heading">
+                  100<sup class="super-script">+</sup>
+                </h3>
+                <p class="ratings-p">Gifts for Regualr Customers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ratings-section">
+            <span class="subheading black">OLD SCHOOL</span>
+            <h2 class="section-heading text-margin ratings-heading">
+              Why do they come to us?
+            </h2>
+            <p class="paragraph-color2 text-margin ratings-paragraph">
+              Only good things are said about us. But it is better to see and
+              feel 1 time than to read 10 times.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section second-bg" id="barbers">
+        <div class="container">
+          <span class="subheading black"
+            >FOR TRUE CONNOISSEURS OF THE ATMOSPHERE</span
+          >
+          <h2 class="section-heading text-margin">Our Barbers</h2>
+          <ul class="list disp-flex center">
+            <li class="disp-flex-li">
+              <img src="./img/OurBarber1.jpg" alt="John Smith image" />
+              <p class="barber-name">John Smith</p>
+              <p class="extreme-barber">Extreme Barber</p>
+              <ul class="list disp-flex-flex">
+                <li>
+                  <a href="">
+                    <svg class="svg-responsive" width="44px" height="44px">
+                      <circle class="circ-fill" r="22" cx="22" cy="22px"/>
+                      <svg width="22" height="22" x="11" y="11">
+                        <use href="/img/icons.svg#icon-instagram-2-3"></use>
+                      </svg>
+                    </svg>
+                  </a>
+              </li>
+                <li>
+                  <a href="">
+                    <svg class="svg-responsive" width="44px" height="44px">
+                      <circle class="circ-fill" r="22" cx="22" cy="22"/>
+                      <svg width="22" height="22" x="11" y="11">
+                        <use href="/img/icons.svg#icon-twitter-1-1"></use>
+                      </svg>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg class="svg-responsive" width="44px" height="44px">
+                      <circle class="circ-fill" r="22" cx="22" cy="22"/>
+                      <svg width="22" height="22" x="11" y="11">
+                        <use href="/img/icons.svg#icon-facebook-1-1"></use>
+                      </svg>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg class="svg-responsive" width="44px" height="44px">
+                      <circle class="circ-fill" r="22" cx="22" cy="22"/>
+                      <svg width="22" height="22" x="11" y="11">
+                        <use href="/img/icons.svg#icon-linkedin-1-2"></use>
+                      </svg>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="disp-flex-li">
+              <img src="./img/OurBarber2.jpg" alt="Michele Doe image" />
+              <p class="barber-name">Michele Doe</p>
+              <p class="extreme-barber">Extreme Barber</p>
+            </li>
+            <li class="disp-flex-li">
+              <img src="./img/OurBarber3.jpg" alt="Alan Black Image" />
+              <p class="barber-name">Alan Black</p>
+              <p class="extreme-barber">Extreme Barber</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <span class="subheading black">IN LATIN, "BARBA" MEANS "BEARD"</span>
+          <ul class="list disp-flex">
+            <li class="disp-flex-li">
+              <img src="./img/Latin1.jpg" alt="Cutting hair with trimmers" />
+            </li>
+            <li class="disp-flex-li">
+              <img src="./img/Latin2.jpg" alt="Applying shaving cream" />
+            </li>
+            <li class="disp-flex-li">
+              <img src="./img/Latin3.jpg" alt="Hot towel on face" />
+              <p>Desktop Apps</p>
+            </li>
+            <li class="disp-flex-li">
+              <img src="./img/Latin4.jpg" alt="Edging back head with razor" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container">
+        <div class="contact-form">
+
+        </div>
+        <div>
+        <h2 style="color: white" class="section-heading">Contacts</h2>
+        <address class="section-address">
+          <ul class="list">
+            <svg width="20px" height="20px"><use href="./img/smartphone.svg"></use></svg>
+            <li class="address-address-icon smart-img">
+              <a
+                class="header-navbar-navlnk"
+                href="https://www.google.com/maps/search/Main+Street,+7A+Kyiv,+08132/@50.401699,30.252512,10z/data=!3m1!4b1"
+              >
+                Main street, 7A<br />
+                Kyiv, 08132<br />
+              </a>
+            </li>
+            <li class="address-phone-icon">
+              <a class="header-navbar-navlnk phon-hover" href="tel:+380441111111"
+                >
+                <svg width="10px" height="16px">
+                  <use href="./img/icons.svg#icon-phone-1-1"></use>
+                </svg>
+                +38 044 111 11 11</a
+              >
+            </li>
+            <li class="address-mail-icon">
+              <a
+                class="header-navbar-navlnk underline"
+                href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
+            </li>
+          </ul>
+          <span>Working hours</span>
+          <p>Daily from 9:00 AM till 22:00 PM</p>
+        </address>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>&#169; Copyright 2022</span>
+      <a href="https://Instagram.com">Instagram</a>
+      <a href="https://Youtube.com">Youtube</a>
+      <form>
+        <p>subscribe to the news letter</p>
+        <input type="email"  placeholder="email"/>
+        <button type="submit">Subscribe</button>
+      </form>
+    </footer>
+
+    <div class="modal-bg is-hidden" data-modal>
+      <div class="modal">
+        <button class="bttn-close" type="button" data-modal-close>X</button>
+        <h2 class="form-title">Leave your information and we'll call you back</h2>
         
-            </nav>
-
-            <a class="link header-navbar-navlnk" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="book-service-bttn" type="button">Book a Service</button>
-        </header>
-
-        <main>
-
-            <section>
-                <span class="subheading transparent-gray">A HAIR SALON FOR MEN IN KYIV</span>
-                <h1 class="section-heading main-heading text-margin">BarberShop</h1>
-                <p class="paragraph-color1 text-margin">We are experts in trendy men's haircuts.</p>
-                <p class="paragraph-color1 ">We work quickly, carefully, and tastefully.</p>
-
-                <img src="./img/Slider img 1.jpg" alt="Barber applying shving cream" width="400">
-                <img src="./img/Slider img 2.jpg" alt="Razer in hand" width="400">
-                <img src="./img/Slider img 3.jpg" alt="Barber cutting hair with scissors" width="400">
-
-                <button type="button">Back</button>
-                <button type="button">Next</button>
-            </section>
-
-            <section class="section" id="about">
-                <div class="container">
-                <img src="./img/sect2img2.jpg" alt="Razer shaping back of the neck">
-                <img src="./img/sect2img1.jpg" alt="Applying shaving cream">
-                <span class="subheading black">ABOUT</span>
-                <h2 class="section-heading text-margin">The Best Barbershop in Your City</h2>
-                <p class="paragraph-color2 text-margin">
-                    If you want to add more confidence to your image, you are definitely in the right place.
-                </p>
-                <p class="paragraph-color2 font-subFont text-margin">
-                    We are a team that never rests on its laurels and yearns for change. 
-                    And once you fall into the hands of our master, you will never be the same again. 
-                    We are a team that is always on the same wavelength with clients. 
-                    Therefore, we are always ready to improve everyone who comes to us!
-                </p>
-                <button class="bttn-margin40" type="button">Book A Service</button>
-                </div>
-            </section>
-
-            <section class="section">
-                <span class="subheading transparent-gray">SPEND TIME IN THE COMPANY OF THE BEST CRAFTSMAN</span>
-                <h2 style="color:white" class="section-heading text-margin">Services and Prices</h2>
-                <ul class="list paragraph-color1">
-                    <li><span>Mens Haircut</span><span>from 300 UAH</span></li>
-                    <li><p>Beartd Trtim</p> <p>from 200 UAH</p></li>
-                    <li><p>Mustache Trim</p> <p>from 200 UAH</p></li>
-                    <li><p>Straight Razor Shave</p> <p>from 200 UAH</p></li>
-                    <li><p>Trainee Haircut</p> <p>from 50 UAH</p></li>
-                    <li><p>Buzz Cut</p> <p>from 200 UAH</p></li>
-                    <li><p>Kids Haircut&#40;&#60;12 y.o&#41;</p> <p>from 300 UAH</p></li>
-                    <li><p>Gray Coverage</p> <p>from 200 UAH</p></li>
-                </ul>
-                <button type="button">Book A Service</button>
-            </section>
-
-            <section class="section">
-                <ul class="list ratings-list">
-                    <li><h3 class="ratings-list-heading">600<sup class="super-script">+</sup></h3><p>Satisfied Customers</p></li>
-                    <li><h3 class="ratings-list-heading">20<sup class="super-script">+</sup></h3><p>The Best Barbers of Kyiv</p></li>
-                    <li><h3 class="ratings-list-heading">50<sup class="super-script">+</sup></h3><p>Excellent Service Awards</p></li>
-                    <li><h3 class="ratings-list-heading">100<sup class="super-script">+</sup></h3><p>Gifts for Regualr Customers</p></li>
-                </ul>
-                <span class="subheading black">OLD SCHOOL</span>
-                <h2 class="section-heading text-margin">Why do they come to us?</h2>
-                <p class="paragraph-color2 text-margin">Only good things are said about us. 
-                    But it is better to see and feel 1 time than to read 10 times.
-                </p>
-            </section>
-
-            <section class="section" id="barbers">
-                <span class="subheading black">FOR TRUE CONNOISSEURS OF THE ATMOSPHERE</span>
-                <h2 class="section-heading text-margin">Our Barbers</h2>
-                <ul class="list">
-                    <li><img src="./img/OurBarber1.jpg" alt="John Smith image"><p class="barber-name">John Smith</p><p class="extreme-barber">Extreme Barber</p></li>
-                    <li><img src="./img/OurBarber2.jpg" alt="Michele Doe image"><p class="barber-name">Michele Doe</p><p class="extreme-barber">Extreme Barber</p></li>
-                    <li><img src="./img/OurBarber3.jpg" alt="Alan Black Image"><p class="barber-name">Alan Black</p><p class="extreme-barber">Extreme Barber</p></li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <span class="subheading black">IN LATIN, "BARBA" MEANS "BEARD"</span>
-                <ul class="list">
-                    <li><img src="./img/Latin1.jpg" alt="Cutting hair with trimmers"></li>
-                    <li><img src="./img/Latin2.jpg" alt="Applying shaving cream"></li>
-                    <li><img src="./img/Latin3.jpg" alt="Hot towel on face"></li>
-                    <li><img src="./img/Latin4.jpg" alt="Edging back head with razor"></li>
-                </ul>
-            </section>
-
-            <section class="section" id="contacts">
-                <h2 style="color:white" class="section-heading">Contacts</h2>
-                <address class="section-address">
-                    <ul class="list">
-                        <li>
-                            <a class="header-navbar-navlnk" href="https://www.google.com/maps/search/Main+Street,+7A+Kyiv,+08132/@50.401699,30.252512,10z/data=!3m1!4b1">
-                                Main street, 7A<br/>
-                                Kyiv, 08132<br/>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="header-navbar-navlnk" href="tel:+380441111111">+38 044 111 11 11</a>
-                        </li>
-                        <li>
-                            <a class="header-navbar-navlnk underline" href="mailto:barbershop@email.com">barbershop@email.com</a>
-                        </li>
-                    </ul>
-                    <span>Working hours</span>
-                    <p>Daily from 9:00 AM till 22:00 PM</p>
-                </address>
-            </section>
-
-        </main>
-
-        <footer>
-            <span>&#169; Copyright 2022</span>
-            <a href="https://Instagram.com">Instagram</a>
-            <a href="https://Youtube.com">Youtube</a>
-        </footer>
-    </body>
+        <form>
+          <label class="form-input-family">
+            <span class="form-label">name</span>
+            <input name="name" type="text" class="input"/>
+            <svg class="form-icons" width="18px" height="18px">
+              <use href="./img/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </label>
+          <label class="form-input-family">
+            <span class="form-label">Telephone Number</span>
+            <input name="tel" type="tel" class="input"/>
+            <svg class="form-icons" width="18px" height="18px">
+              <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </label>
+          <label  class="form-input-family">
+            <span class="form-label">Email</span>
+            <input name="email" type="email" class="input"/>
+            <svg class="form-icons" width="18px" height="18px">
+              <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </label>
+          <label  class="form-input-family">
+            <span class="form-label">Comments</span>
+            <textarea class="input" name="text-area" rows="8" placeholder="Enter the text"></textarea>
+          </label>
+          <label  class="label-check">
+            <input class="form-chk-bx" name="chek-bx" type="checkbox" />
+            <svg class="icon" width="16" height="16">
+              <use href="/img/icons.svg#icon-Vector-3"></use>
+            </svg>
+            <span>I agree with the newsletter and accept the Terms and Conditions</span>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
