@@ -1,0 +1,99 @@
+.is-hidden{
+    visibility: hidden;
+}
+
+.modal-bg{
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.modal{
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.bttn-close{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 11px;
+    right: 12px;
+}
+
+.form-title{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: .07;
+}
+
+.form-input-family{
+    display: block;
+    position: relative;
+}
+
+.form-label{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    top: -16px;
+}
+
+.input{
+    width: 100%;
+    margin: 0 0 29px 0;
+    padding: 11px 16px 11px 40px;
+    border: 1px solid rgba(0,0,0,.5);
+    resize: none;
+}
+
+.input:hover,
+.input:focus,
+.input:hover + .form-icons,
+.input:focus + .form-icons{
+    border-color: #2196F3;
+    fill: #2196F3;
+}
+
+.form-icons{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.label-check .form-chk-bx{
+    appearance: none;
+}
+
+.label-check .icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    fill: none;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+
+.label-check .form-chk-bx:focus + .icon,
+.label-check .form-chk-bx:checked:focus + .icon,
+.label-check .form-chk-bx:checked:hover + .icon{
+    outline: 2px solid black;
+}
+
+.label-check .form-chk-bx:checked + .icon{
+    fill: white;
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+.input:placeholder-shown{
+    color: rgba(117, 117, 117, 0.5);
+}

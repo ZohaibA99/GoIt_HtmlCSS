@@ -1,0 +1,18 @@
+.bttn--position{
+    margin-top: 40px;
+}
+
+.bttn{
+    border: 1px solid $secondary-active-color;
+    background-color: transparent;
+    width: 160px;
+    border-radius: 25px;
+    padding: 12px 24px;
+
+}
+
+.bttn:hover{
+    cursor: pointer;
+    background-color: $secondary-active-color;
+    color: white;
+} 

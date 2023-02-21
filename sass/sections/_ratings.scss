@@ -1,0 +1,60 @@
+.ratings__list{
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.36;
+    color: $color-black;
+}
+
+.ratings__heading{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.super-script{
+    color: $secondary-active-color;
+}
+
+.ratings__leftSection{
+    display: flex;
+}
+
+.subheading__ratings{
+    color: black;
+}
+
+.ratings__items{
+    background-color: $secondary-bg-color;
+    width: 170px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.ratings-section{
+    margin-left: 130px;
+}
+
+.ratings__h2heading{
+    width: 420px;
+}
+
+.ratings__paragraph{
+    width: 470px;
+    color: $paragraph-color2;
+    margin-top: 20px;
+}
+
+.ratings-list-right{
+    margin-top: 35px;
+    margin-left: 30px;
+}  
+
+.ratings-p{
+    text-align: center;
+    width: 122px;
+    margin: 0 24px;
+    padding: 0;
+    margin-bottom: 20px;
+}

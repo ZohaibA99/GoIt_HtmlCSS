@@ -1,0 +1,49 @@
+.services--bg{
+    background: linear-gradient(to bottom, rgba(17, 19, 25, .5), rgba(17, 19, 25, .5)),linear-gradient(to bottom, rgba(17, 19, 25, .5), rgba(17, 19, 25, .5)), url(/img/services.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+.services__subheading-text{
+    color: $color-gray-transparent;
+}
+
+.price__leftList{
+    width: 585px;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.price__rightList{
+    width: 585px;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.right{
+    margin-right: 40px;
+    float: right;
+}
+
+.left{
+    margin-left: 40px;
+}
+
+.prices__list{
+    margin-left: 57px;
+    margin-top: 46px;
+    display: flex;
+    color: $paragraph-color1;
+
+}
+
+.button__prices{
+    margin-top: 50px;
+    margin-left: 565px;
+    color: white;
+}
