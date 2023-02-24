@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Raleway:wght@700&display=swap");
 body {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -71,16 +77,28 @@ address {
 }
 
 .container {
-  width: 1280px;
   margin: 0 auto;
-  padding: 0 55px;
+  padding: 0 31px;
+  width: 480px;
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 55px;
+  }
 }
 
 .ratings__container {
-  width: 1280px;
-  padding: 0 155px;
+  width: 480px;
+  padding: 0 31px;
   margin: 0 auto;
   display: flex;
+}
+@media screen and (min-width: 1280px) {
+  .ratings__container {
+    width: 1280px;
+    padding: 0 155px;
+  }
 }
 
 .section {
@@ -348,8 +366,13 @@ address {
 .header-bg {
   background-image: url(/img/Slider\ img\ 3.jpg);
   background-repeat: no-repeat;
-  background-position: 155px;
-  background-size: 100%;
+  background-position: 0;
+}
+@media screen and (min-width: 1280px) {
+  .header-bg {
+    background-position: 155px;
+    background-size: 100%;
+  }
 }
 
 .header-nav {
@@ -365,23 +388,42 @@ address {
 
 .header__sectionLeft {
   flex-direction: column;
-  width: 155px;
+  width: 93px;
   margin-top: 30px;
+}
+@media screen and (min-width: 1280px) {
+  .header__sectionLeft {
+    width: 155px;
+  }
 }
 
 .header__leftLinks {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__leftLinks {
+    display: flex;
+  }
 }
 
 .header__sectionRight {
-  width: 1125px;
-  padding-left: 100px;
-  padding-bottom: 206px;
+  width: 480px;
+}
+@media screen and (min-width: 1280px) {
+  .header__sectionRight {
+    width: 1125px;
+    padding-left: 100px;
+    padding-bottom: 206px;
+  }
 }
 
 .logo {
-  margin-left: 55px;
-  margin-right: 31px;
+  margin-left: 31px;
+}
+@media screen and (min-width: 1280px) {
+  .logo {
+    margin-left: 55px;
+  }
 }
 
 .side-lnk {
@@ -399,7 +441,12 @@ address {
 .right__nav {
   display: flex;
   color: white;
-  margin-top: 30px;
+  margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  .right__nav {
+    margin-top: 30px;
+  }
 }
 
 .nav__item:not(:nth-last-child(1)) {
@@ -407,7 +454,13 @@ address {
 }
 
 .nav__contact {
-  margin-left: 244px;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .nav__contact {
+    display: flex;
+    margin-left: 244px;
+  }
 }
 
 .nav__link--text {
@@ -415,7 +468,12 @@ address {
 }
 
 .nav {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .nav__link--active {
@@ -423,23 +481,38 @@ address {
 }
 
 .phn__lnk {
-  margin-right: 40px;
+  margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  .phn__lnk {
+    margin-right: 40px;
+    margin-top: 20px;
+  }
 }
 
 .hero {
-  margin-top: 204px;
+  margin-top: 132px;
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    margin-top: 204px;
+  }
 }
 
 .hero__heading {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 42px;
+  font-size: 48px;
   letter-spacing: 0.05em;
   line-height: 1.17;
-  font-size: 72px;
   line-height: 1.18;
   color: #FFFFFF;
   margin-top: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .hero__heading {
+    font-size: 78px;
+  }
 }
 
 .hero__subheading {
@@ -467,6 +540,52 @@ address {
 
 .hero__discription {
   color: #9DA4BD;
+}
+
+.menu-toggle {
+  max-width: 41px;
+  max-height: 41px;
+  margin-top: 30px;
+  margin-left: 276px;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle-close {
+  margin-top: 0;
+  margin-left: 276px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: white;
+  z-index: 999;
+  transform: translateX(100vw);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.toggle-menu__topLinks {
+  margin-top: 48px;
+}
+
+.toggle-menu__bottomLinks {
+  margin-top: 302px;
+}
+
+.toggleMenusociallinks {
+  display: flex;
 }
 
 .ratings__list {

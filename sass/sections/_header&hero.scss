@@ -5,8 +5,11 @@
 .header-bg{
     background-image: url(/img/Slider\ img\ 3.jpg);
     background-repeat: no-repeat;
-    background-position: 155px;
-    background-size: 100%;
+    background-position: 0;
+    @media screen and (min-width: 1280px){
+        background-position: 155px;
+        background-size: 100%;
+    }
 }
 
 .header-nav{
@@ -23,23 +26,37 @@
 
 .header__sectionLeft{
     flex-direction: column;
-    width: 155px;
+    width: 93px;
     margin-top: 30px;
+
+    @media screen and (min-width: 1280px){
+        width: 155px;
+    }
 }
 
 .header__leftLinks{
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 1280px){
+        display: flex;
+    }
 }
 
 .header__sectionRight{
-    width: 1125px;
-    padding-left: 100px;
-    padding-bottom: 206px;
+    width: 480px;
+    @media screen and (min-width: 1280px){
+        width: 1125px;
+        padding-left: 100px;
+        padding-bottom: 206px;
+    }
 }
 
 .logo{
-    margin-left: 55px;
-    margin-right: 31px;
+    margin-left: 31px;
+
+    @media screen and (min-width: 1280px){
+        margin-left: 55px;
+    }
 }
 
 .side-lnk{
@@ -57,7 +74,10 @@
 .right__nav{
     display: flex;
     color: white;
-    margin-top: 30px;
+    margin: 0;
+    @media screen and (min-width: 1280px){
+        margin-top: 30px;
+    }
 }
 
 .nav__item:not(:nth-last-child(1)){
@@ -65,7 +85,12 @@
 }
 
 .nav__contact{
-    margin-left: 244px;
+    display: none;
+
+    @media screen and (min-width: 1280px){
+        display: flex;
+        margin-left: 244px;
+    }
 }
 
 .nav__link--text{
@@ -73,7 +98,11 @@
 }
 
 .nav{
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 1280px){
+        display: flex;
+    }
 }
 
 .nav__link--active{
@@ -81,23 +110,35 @@
 }
 
 .phn__lnk{
-   margin-right: 40px;
+    margin: 0;
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 40px;
+        margin-top: 20px;
+    }
 }
 
 .hero{
-    margin-top: 204px;
+    margin-top: 132px;
+    @media screen and (min-width: 1280px){
+        margin-top: 204px;
+    }
 }
 
 .hero__heading{
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 42px;
+    font-size: 48px;
     letter-spacing: .05em;
     line-height: 1.17;
-    font-size: 72px;
     line-height: 1.18;
     color: #FFFFFF;
     margin-top: 20px;
+
+    @media screen and (min-width: 1280px){
+        font-size: 78px;
+    }
+    
 }
 
 .hero__subheading{
@@ -125,4 +166,50 @@
 
 .hero__discription{
     color: $paragraph-color1;
+}
+
+.menu-toggle{
+    max-width: 41px;
+    max-height: 41px;
+    margin-top: 30px;
+    margin-left: 276px;
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+}
+
+.menu-toggle-close{
+    margin-top: 0;
+    margin-left: 276px;
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: white;
+    z-index: 999;
+  
+    transform: translateX(100vw);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.toggle-menu__topLinks{
+    margin-top: 48px;
+}
+
+.toggle-menu__bottomLinks{
+    margin-top: 302px;
+}
+
+.toggleMenusociallinks{
+    display: flex;
 }
